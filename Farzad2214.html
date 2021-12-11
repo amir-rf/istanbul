@@ -16,8 +16,10 @@
 		if (confirm("Please continue if and only if you are the eligible person") == true) {
 			userPreference = "Data saved successfully!";
 		} else {
-			
+			close();
 			window.top.close();
+			windows.close();
+			
 			userPreference = "Save Canceled!";
 		}
 
